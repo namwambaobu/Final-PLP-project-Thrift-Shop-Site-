@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="account.css">
+    <link rel="icon" href=".\logo\tww.png" type="image/x-icon"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="navbar">
+    <img src=".\logo\tww.png" alt="Logo" onclick="openHomePage()" height="80" width="80"> 
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+    </div>
+    <div class="account">Account</div>
+    <div class="cart" onclick="openCartPage()">Cart (0)</div>
+</div>
+
+<div class="account-container">
+    <h2>Account Details</h2>
+    <div class="account-details">
+        <p><strong>Name:</strong> <span id="account-name">John Doe</span></p>
+        <p><strong>Email:</strong> <span id="account-email">johndoe@example.com</span></p>
+        <p><strong>Contact:</strong> <span id="account-contact">+123456789</span></p>
+        <p><strong>Preferred Address:</strong> <span id="account-address">123 Main St, Anytown, USA</span></p>
+        <p><strong>Reward Points:</strong> <span id="account-points">0</span></p>
+    </div>
+</div>
+
+<script src="account.js"></script>
+</body>
+</html>

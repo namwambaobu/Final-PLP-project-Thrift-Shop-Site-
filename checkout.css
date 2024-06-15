@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5dc; /* Vintage beige background */
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #8b4513; /* Saddle brown */
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar .search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.navbar .account, .navbar .cart {
+    margin-left: 15px;
+}
+
+/* Checkout Styles */
+.checkout-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff8dc; /* Cornsilk background for the checkout */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-container h2 {
+    text-align: center;
+    color: #8b4513; /* Saddle brown */
+}
+
+.selected-products {
+    margin: 20px 0;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.product-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.checkout-actions {
+    text-align: center;
+}
+
+.checkout-actions .checkout-btn, .checkout-actions .back-btn {
+    padding: 10px 20px;
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.checkout-actions .checkout-btn:hover, .checkout-actions .back-btn:hover {
+    background-color: #a0522d; /* Sienna for hover effect */
+}

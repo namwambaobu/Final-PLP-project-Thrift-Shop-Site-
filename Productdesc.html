@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="productdescri.css">
+    <link rel="icon" href=".\logo\tww.png" type="image/x-icon"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="navbar">
+    <img src=".\logo\tww.png" alt="Logo" onclick="openHomePage()" height="80" width="80"> 
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+    </div>
+    <div class="account">Account</div>
+    <div class="cart">Cart (0)</div>
+</div>
+
+<div class="product-container">
+    <div class="product-image">
+        <img id="product-image" src="" alt="Product Image">
+    </div>
+    <div class="product-details">
+        <h2 id="product-name">Product Name</h2>
+        <p id="product-description">Product description goes here. This is where detailed information about the product will be displayed.</p>
+        <p id="product-price">Price: $0.00</p>
+        <button id="add-to-cart-btn">Add to Cart</button>
+    </div>
+</div>
+
+<script src="productdescri.js"></script>
+</body>
+</html>

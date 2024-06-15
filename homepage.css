@@ -1,0 +1,126 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5dc; /* Vintage beige background */
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #8b4513; /* Saddle brown */
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar .search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.navbar .account, .navbar .cart {
+    margin-left: 15px;
+}
+
+/* Carousel Styles */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    position: relative;
+    max-width: 800px;
+    overflow: hidden;
+    background-color: #fff8dc; /* Cornsilk background for the carousel */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.product-item {
+    min-width: 200px;
+    margin: 0 10px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.product-item.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.carousel-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* Product Details Styles */
+.product-details {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-details .product-name {
+    font-size: 2em;
+    color: #8b4513; /* Saddle brown */
+}
+
+.product-details .product-price {
+    font-size: 1.5em;
+    color: #555; /* Darker gray */
+}
+
+.add-to-cart-btn {
+    padding: 10px 20px;
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #a0522d; /* Sienna for hover effect */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="icon" href=".\logo\tww.png" type="image/x-icon"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="navbar">
+    <img src=".\logo\tww.png" alt="Logo" onclick="openHomePage()" height="80" width="80"> 
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+    </div>
+    <div class="account" onclick="openAccountPage()">Account</div>
+    <div class="cart" onclick="openCartPage()">Cart (0)</div>
+</div>
+
+<div class="carousel">
+    <button class="carousel-btn prev-btn">❮</button>
+    <div class="product-container">
+    </div>
+    <button class="carousel-btn next-btn">❯</button>
+</div>
+
+<div class="product-details">
+    <h2 class="product-name">Product Name</h2>
+    <p class="product-price">$0.00</p>
+    <button class="add-to-cart-btn">Add to Cart</button>
+</div>
+
+
+<script src="homepage.js"></script>
+</body>
+</html>

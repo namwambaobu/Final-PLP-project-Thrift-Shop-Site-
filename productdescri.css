@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5dc; /* Vintage beige background */
+    color: #333;
+}
+
+/* Navbar Styles (same as other pages for consistency) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #8b4513; /* Saddle brown */
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar .search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.navbar .account, .navbar .cart {
+    margin-left: 15px;
+}
+
+/* Product Container Styles */
+.product-container {
+    display: flex;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff8dc; /* Cornsilk background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-details {
+    flex: 2;
+}
+
+.product-details h2 {
+    color: #8b4513; /* Saddle brown */
+}
+
+.product-details p {
+    margin: 10px 0;
+}
+
+button#add-to-cart-btn {
+    padding: 10px 20px;
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#add-to-cart-btn:hover {
+    background-color: #a0522d; /* Sienna for hover effect */
+}

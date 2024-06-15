@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="icon" href=".\logo\tww.png" type="image/x-icon"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="navbar">
+    <img src=".\logo\tww.png" alt="Logo" onclick="openHomePage()" height="80" width="80"> 
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+    </div>
+    <div class="account">Account</div>
+    <div class="cart">Cart (0)</div>
+</div>
+
+<div class="checkout-container">
+    <h2>Checkout</h2>
+    <div class="selected-products">
+        <!-- Selected products will be dynamically inserted here -->
+    </div>
+    <div class="checkout-actions">
+        <button class="checkout-btn" onclick="proceedToPayment()">Proceed to Payment</button>
+        <button class="back-btn" onclick="continueShopping()">Back to Shopping</button>
+    </div>
+</div>
+
+<script>
+    function proceedToPayment() {
+        window.location.href = 'payment.html';
+    }
+
+    function continueShopping() {
+        window.location.href = 'homepage.html';
+    }
+</script>
+<script src="checkout.js"></script>
+</body>
+</html>
